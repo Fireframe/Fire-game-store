@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Loja de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">Logo</div>
+        <nav>
+            <a href="#">Produtos</a>
+            <a href="#">Feedback</a>
+            <a href="#">Termos de serviços</a>
+            <a href="#">Carrinho</a>
+            <a href="login.html" class="login-btn">Fazer login</a>
+            <button class="signup-btn">Criar conta</button>
+        </nav>
+    </header>
+
+    <!-- Tela de Login -->
+    <section class="login-section">
+        <div class="login-container">
+            <h1>Login</h1>
+            <form id="loginForm">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="login-submit">Entrar</button>
+            </form>
+            <p class="signup-link">Não tem uma conta? <a href="signup.html">Crie uma agora</a></p>
+        </div>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+</html>

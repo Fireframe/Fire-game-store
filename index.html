@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Jogos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo"> <img style="width: 120px;" src="imgs/logo.png" alt="Minha Figura"></div>
+        <nav>
+            <a href="#">Produtos</a>
+            <a href="#">Feedback</a>
+            <a href="#">Termos de serviços</a>
+            <a href="#">Carrinho</a>
+            <a href="login.html" class="login-btn">Fazer login</a>
+            <a href="signup.html" class="signup-btn">Criar conta</a>
+            <a href="#" id="logout" style="display: none;">Sair</a>
+            <span id="userGreeting" style="display: none;"></span>
+        </nav>
+    </header>
+
+    <!-- Filtro de Produtos -->
+    <section class="product-filter">
+        <h1>Produtos</h1>
+        <p>Veja todas as lista de produtos por aqui</p>
+        <input type="text" placeholder="Procure pelo produto" id="search">
+        <select id="category">
+            <option value="all">Todas as categorias</option>
+            <option value="acao">Jogos de Ação</option>
+            <option value="aventura">Jogos de Aventura</option>
+            <option value="esporte">Jogos de Esporte</option>
+            <option value="luta">Jogos de Luta</option>
+            <option value="rpg">Jogos de RPG</option>
+        </select>
+    </section>
+
+    <!-- Lista de Produtos -->
+    <section class="product-list" id="product-list">
+        <!-- Os produtos serão carregados dinamicamente pelo JavaScript -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-section">
+            <h3>Navegação</h3>
+            <a href="#">Feedback</a>
+            <a href="#">Catálogo</a>
+        </div>
+        <div class="footer-section">
+            <h3>Empresa</h3>
+            <a href="#">Termos & Serviços</a>
+            <a href="#">Termos de uso</a>
+        </div>
+        <div class="footer-section">
+            <h3>Conta</h3>
+            <a href="#">Minha conta</a>
+            <a href="#">Minhas compras</a>
+        </div>
+        <p>Copyright © FireStore - All rights reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

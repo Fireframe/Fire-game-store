@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes do Produto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Página inicial</a> &gt; <span id="product-name-header">Produto</span>
+        </nav>
+    </header>
+
+    <section class="product-container">
+        <div class="product-image">
+            <img id="product-image" src="" alt="Imagem do produto">
+        </div>
+        <div class="product-info">
+            <h1 id="product-name">Nome do Produto</h1>
+            <p class="product-code">Cód. Item: <span id="product-code">123456789</span></p>
+            <p id="product-stock" class="product-stock">Disponível em estoque</p>
+            <div class="product-pricing">
+                <p class="old-price" id="product-old-price">R$ 99,00</p>
+                <p class="new-price" id="product-new-price">R$ 4,99</p>
+                <p class="discount" id="product-discount">Economize R$ 94,01</p>
+                <p class="installment">até 12x de <span id="product-installment">R$ 0,41</span></p>
+            </div>
+            <div class="product-quantity">
+                <label>Quantidade:</label>
+                <button id="decrease-quantity">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button id="increase-quantity">+</button>
+            </div>
+            <button class="buy-button" id="buy-button">Comprar Agora</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright © FireStore - All rights reserved</p>
+    </footer>
+
+    <script src="detalhes.js"></script>
+</body>
+</html>
